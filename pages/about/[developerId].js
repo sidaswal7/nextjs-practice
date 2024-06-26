@@ -21,7 +21,7 @@ const Developer = ()=>{
     const displayDeveloper = details.find((dev)=> dev.id == developerId);
     console.log(displayDeveloper);
     return(
-        <h1>{`${displayDeveloper.name} ${displayDeveloper.role}`}</h1>
+        <h1>{displayDeveloper && `${displayDeveloper.name} ${displayDeveloper.role}`}</h1>
     )
 }
 
